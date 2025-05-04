@@ -1,29 +1,64 @@
-# Create T3 App
+# Zagreus
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Zagreus is a privacy-centric, cross-chain token swap and bridge application focused on ultra-low fees and community rewards. Powered by a modern web stack and enhanced with deep crypto integration, Zagreus empowers users to swap, bridge, and earn — all with complete privacy.
 
-## What's next? How do I make an app with this?
+## ✨ Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- ⚡ Zagswap: A custom privacy swap engine that routes and masks transactions.
+- 🔐 Privacy-first: Reverse proxy token swaps to obscure sender/receiver info.
+- 🌉 Cross-Chain: Supports 300+ chains and over 1000+ tokens.
+- 💰 Lowest Fees: Just 1% swap fee — one of the lowest available.
+- 🎁 Zagshare & Zagpoints: Rewards ecosystem using NFTs and participation points.
+- 🖥️ Fully Responsive UI: Built with Tailwind CSS, Next.js App Router, and animated transitions.
+- 📄 Informational Resources: Includes links to docs, whitepaper, and roadmap.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## 🚀 Getting Started
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. Clone the repository
 
-## Learn More
+   git clone https://github.com/joewxlker/zagreus
+   cd zagreus
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+2. Install dependencies
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+   npm install
+   # or
+   yarn install
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+3. Configure environment variables
 
-## How do I deploy this?
+   Copy .env.example to .env and fill in required fields like:
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+   NEXT_PUBLIC_DAPP_URL=https://your-dapp-url
+
+4. Run the app
+
+   npm run dev
+   # or
+   yarn dev
+
+   Then open http://localhost:3000 in your browser.
+
+## 🧱 Built With
+
+- Next.js (App Router)
+- Tailwind CSS
+- TypeScript
+- Vercel Hosting
+- Custom animations and SVG effects
+- Token + Chain logos from SimpleSwap CDN
+
+## 📁 Project Structure Highlights
+
+- app/page.tsx: Main homepage, including hero section, swap interface, and animated sections.
+- components/SwapDisplay.tsx: Custom token swap UI with ETH/USDC visuals.
+- public/tokens/: Token icons for visualized chains.
+- env.ts: Used to safely access environment variables.
+
+## 🔗 Live Demo
+
+👉 https://zagreus.vercel.app/
+
+## 👋 Author
+
+[@joewxlker](https://github.com/joewxlker) — open for feedback and collaboration!
